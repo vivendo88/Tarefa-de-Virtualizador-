@@ -20,6 +20,9 @@ sudo usermod -aG libvirt $USER && newgrp libvirt
 
 ssh-keygen -t rsa -b 4096 -N "" -f /root/.ssh/id_rsa
 
+#crie uma arquivo chamado main.tf
+nano main.tf # escreva o código do arvquivo Main.tf_1_VM para cria 1 vm ou Main.tf_2_VM cria 2 vms
+
 #Comando para validar a sintaxe e arguntos do arquivo main
 terraform validate
 
