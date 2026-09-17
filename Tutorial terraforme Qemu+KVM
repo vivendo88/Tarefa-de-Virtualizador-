@@ -32,6 +32,10 @@ terraform apply #digite yes
 #Comando para vizualizar as maquinas criadas
 virsh list --all
 
+#comando para acessar a VM
+ssh ubuntu@<IP_DO_OUTPUT>
+
+
 
 #Observações
 
