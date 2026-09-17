@@ -35,6 +35,33 @@ virsh list --all
 
 #Observações
 
+#Caso apresente o erro 
+#libvirt_domain.k8s_node: Creating...
+#╷
+#│ Error: error creating libvirt domain: internal error: process exited while connecting to monitor: 2026-09-17T19:59:10.117516Z qemu-system-x86_64: -blockdev {"driver":"file","filename":"/var/lib/libvirt/images/ubuntu-22.04-base.qcow2","node-name":"libvirt-3-storage","auto-read-only":true,"discard":"unmap"}: Could not open '/var/lib/libvirt/images/ubuntu-22.04-base.qcow2': Permission denied
+#│
+#│   with libvirt_domain.k8s_node,
+#│   on main.tf line 69, in resource "libvirt_domain" "k8s_node":
+#│   69: resource "libvirt_domain" "k8s_node" {
+#│
+#╵
+
+#Altere as permissões 
+chmod 755 /var/lib/libvirt/images
+chown -R libvirt-qemu:kvm /var/lib/libvirt/images
+chmod 644 /var/lib/libvirt/images/*.qcow2
+
+#Edite o arquivo 
+
+nano /etc/libvirt/qemu.conf
+#descomente  e edite a linha deixando ela assim 
+security_driver = "none"
+user = "root"
+group = "root"
+#Depois restart o libvirt
+systemctl restart libvirtd
+
+
 
 
 
