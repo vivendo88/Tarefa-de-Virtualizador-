@@ -18,6 +18,36 @@ sudo apt-get install -y qemu-kvm libvirt-daemon-system libvirt-clients bridge-ut
 sudo systemctl enable --now libvirtd
 sudo usermod -aG libvirt $USER && newgrp libvirt
 
+ssh-keygen -t rsa -b 4096 -N "" -f /root/.ssh/id_rsa
+
+#Comando para validar a sintaxe e arguntos do arquivo main
+terraform validate
+
+#comando para simular execução
+terraform plan
+
+#Comando para executar o arquivo
+terraform apply #digite yes
+
+#Comando para vizualizar as maquinas criadas
+virsh list --all
+
+
+#Observações
+
+
+
+
+
+
+
+
+
+ela perguntou se tava levando para ajudar cuidar da elis  e bernardo... 
+
+
+
+
 
 
 
