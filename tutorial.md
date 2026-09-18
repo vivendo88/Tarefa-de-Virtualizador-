@@ -1,7 +1,7 @@
 ```markdown
 ## Configuração do Ambiente e Instalação do Terraform e KVM
 
-## 1. Atualização e Instalação de Dependências
+ 1. Atualização e Instalação de Dependências
 
 Realize o update dos pacotes da VM e instale as ferramentas necessárias:
 
