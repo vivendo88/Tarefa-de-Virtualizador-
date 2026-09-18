@@ -3,7 +3,7 @@
 
  1. Atualização e Instalação de Dependências
 
-Realize o update dos pacotes da VM e instale as ferramentas necessárias:
+
 
 ```bash
 sudo apt-get update -y && sudo apt-get upgrade -y
