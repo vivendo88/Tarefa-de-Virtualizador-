@@ -4,7 +4,7 @@
 # Configuração do Ambiente e Instalação do Terraform e KVM
 
 ## 1. Atualização e Instalação de Dependências
-Realize o update dos pacotes da VM[cite: 1] e instale as ferramentas necessárias:
+#Realize o update dos pacotes da VM e instale as ferramentas necessárias:
 ```bash
 sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install -y curl unzip gnupg software-properties-common git python3-pip python3-venv
