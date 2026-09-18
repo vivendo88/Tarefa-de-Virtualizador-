@@ -1,4 +1,4 @@
-Aqui está o seu script organizado, limpo e formatado como um **Markdown** estruturado, com seções claras, blocos de código apropriados e melhor legibilidade:
+
 
 ```markdown
 # Configuração do Ambiente e Instalação do Terraform e KVM
