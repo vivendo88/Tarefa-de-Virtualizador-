@@ -157,10 +157,7 @@ Reinicie o serviço do libvirt para aplicar as alterações:
 systemctl restart libvirtd
 
 ```
-
-```
 ---
-
 
 ## Link de acesso github https://github.com/vivendo88/Tarefa-de-Virtualizador-.git
 
