@@ -76,6 +76,7 @@ Inicie o Terraform
 ```bash
 terraform init
 
+```
 
 Valide a sintaxe e os argumentos do arquivo:
 
