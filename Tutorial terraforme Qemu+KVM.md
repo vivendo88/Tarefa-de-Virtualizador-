@@ -70,6 +70,13 @@ nano main.tf
 
 (Nota: Escreva o código do arquivo `Main.tf_1_VM` para criar 1 VM ou `Main.tf_2_VM` para criar 2 VMs).
 
+
+Inicie o Terraform
+
+```bash
+terraform init
+
+
 Valide a sintaxe e os argumentos do arquivo:
 
 ```bash
